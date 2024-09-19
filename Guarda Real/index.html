@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <title>Cavaleiros</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+
+    <h1 id='title'>Inscrição para a guarda real</h1>
+
+    <p id='description'>Faça sua inscrição caso julgue que és digno o suficiente para fazer parte da elite dos cavaleiros do reino.</p>
+
+    <form id='survey-form'>
+      <label id='name-label'>Quem tu és?
+        <input id='name' type='text' placeholder='Teu nome' required/>
+      </label>
+
+      <label id="email-label"> Como contatar-te?
+        <input id='email' type='email' placeholder='Teu email' required/>
+      </label>
+      
+      <label id="number-label">Quantas primaveras?
+        <input id='number' type='number' min='8' max='152' placeholder='Tua idade' required/>
+      </label>
+
+      <select id='dropdown'>
+        <option value=''>Selecione</option>
+        <option value='1'>Catafractários</option>
+        <option value='2'>Jinetes</option>
+        <option value='3'>Janízaros</option>
+        <option value='4'>Kanuris</option>        
+        <option value='5'>Maoris</option>
+        <option value='6'>Mosqueteiros</option>
+        <option value='7'>Peltastas</option>
+      </select>
+
+      <input name='botao' value='1' type='radio'/><label for="botao">Eu declaro que irei dedicar minha vida em nome do rei.</label><br>
+      <input name='botao' value='2' type='radio'/><label for="botao">Eu declaro que irei dedicar minha vida em nome da princesa.</label><br>
+
+
+ <input id="checkbox1" name="checkbox" value="espada" type="checkbox"/>
+<label for="checkbox1">Maestria com Espadas</label><br>
+
+<input id="checkbox2" name="checkbox" value="arco" type="checkbox"/>
+<label for="checkbox2">Habilidade com Arcos</label><br>
+
+<input id="checkbox3" name="checkbox" value="lança" type="checkbox"/>
+<label for="checkbox3">Treinamento com Lanças</label><br>
+
+<input id="checkbox4" name="checkbox" value="cavalaria" type="checkbox"/>
+<label for="checkbox4">Cavalaria</label><br>
+
+<input id="checkbox5" name="checkbox" value="diplomacia" type="checkbox"/>
+<label for="checkbox5">Arte da Diplomacia</label><br>
+
+<input id="checkbox6" name="checkbox" value="forca" type="checkbox"/>
+<label for="checkbox6">Força Bruta</label><br>
+
+<input id="checkbox7" name="checkbox" value="estrategia" type="checkbox"/>
+<label for="checkbox7">Estratégia Militar</label><br>
+
+
+      <textarea rows="3" cols="30" placeholder='Conte-nos mais sobre sua jornada...'>
+      </textarea>
+
+      <input id='submit' type='submit'/>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap'); /* Fonte medieval */
+
+/* Estilo do corpo da página */
+body {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #f0e6d6; /* Cor de pergaminho */
+  margin: 0;
+  padding: 20px 0; /* Adiciona espaço superior e inferior */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Corrige alinhamento cortado */
+  min-height: 100vh; /* Garante que a página preencha toda a altura */
+  box-sizing: border-box;
+}
+
+/* Estilo do título */
+h1#title {
+  font-size: 3em;
+  color: #6d4c41; /* Cor marrom, simulando madeira */
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px #000000; /* Sombra no título para destaque */
+}
+
+/* Estilo da descrição */
+p#description {
+  text-align: center;
+  color: #4e342e;
+  font-size: 1.3em;
+  margin-bottom: 25px;
+}
+
+/* Estilo do formulário */
+#survey-form {
+  background-color: #e0d3b8; /* Cor de fundo tipo pergaminho */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombras para profundidade */
+  border: 3px solid #6d4c41; /* Bordas tipo pergaminho */
+  max-width: 600px;
+  width: 100%;
+  font-size: 1.1em;
+}
+
+/* Estilo dos labels e inputs */
+label {
+  display: block;
+  margin-bottom: 15px;
+  color: #5d4037;
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #8d6e63; /* Cor marrom escuro */
+  border-radius: 6px;
+  background-color: #f9f3e8; /* Cor de pergaminho velho */
+  font-size: 1.1em;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+select {
+  background-color: #f9f3e8;
+}
+
+/* Radio buttons e checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 18px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Estilo do botão de submit */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #8d6e63; /* Cor marrom */
+  color: white;
+  border: 2px solid #5d4037;
+  border-radius: 6px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+input[type="submit"]:hover {
+  background-color: #6d4c41; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Foco nos campos do formulário */
+#survey-form input:focus,
+#survey-form textarea:focus,
+#survey-form select:focus {
+  outline: none;
+  border-color: #d7a300; /* Cor dourada medieval para foco */
+}
+
+textarea {
+  resize: none;
+}
